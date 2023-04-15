@@ -8,7 +8,6 @@ export const SignupForm = () => {
   // be called when the form is submitted
 
   useEffect(() => {
-    console.log("FETCH! ");
     fetch("/customers")
       .then((res) => res.json())
       .then((data) => {
